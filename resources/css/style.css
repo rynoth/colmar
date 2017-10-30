@@ -1,0 +1,347 @@
+/*======================= 
+Colmar Academy Stylesheet
+
+Author: Mitch M.
+Version: 1.0
+Last Modified: 10/28/17
+========================*/
+
+/*======= Fonts ========*/
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+       url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+       url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.ttf') format('truetype'),
+       url('../fonts/Lato-Bold.ttf') format('truetype'),
+       url('../fonts/Lato-Black.ttf') format('truetype');
+}
+
+
+/*======= General Styles ========*/
+
+body {
+  margin: auto;
+  font-family: 'Open Sans';
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 32px 24px;
+  width: 1170px;
+}
+
+
+/*======= Top Bar Styles ========*/
+
+nav {
+  width: 100%;
+  height: 64px;
+}
+
+nav .container {
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.schoolname {
+ text-transform: uppercase;
+ font-size: 1.75em;
+}
+
+.schoolname span:first-child {
+  font-weight: 800;
+  color: rgb(74, 74, 74);
+}
+
+.schoolname span:last-child {
+  color: rgba(74, 74, 74, .5);
+}
+
+.logo img {
+  height: 3em;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu li {
+  margin-left: 16px;
+}
+
+.menu li a {
+  text-decoration: none;
+}
+
+/*======= Banner Styles ========*/
+
+.banner {
+  background-color: #fff;
+}
+
+.banner .container {
+  background-color: #d8d8d8;
+  display: flex;
+}
+
+.media {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.media img {
+  width: 100%;
+}
+
+.banner-textblock {
+  padding-left: 24px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #4a4a4a;
+  text-align: left;
+  font-family: 'Lato';
+}
+
+.banner-textblock h1 {
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1.25em;
+}
+
+.banner-textblock h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+.banner-btn {
+  margin-top: 20px;
+  padding: 20px 0;
+  width: 60%;
+  font-size: 1.25em;
+  text-align: center;
+  background-color: #4a4a4a;
+}
+
+.banner-btn a {
+  padding: 18px 87px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*======= Main Content Styles ========*/
+
+.main-content {
+  font-family: 'Lato';
+  color: #4a4a4a;
+}
+
+.main-content .container {
+  background-color: #f3f5f5;
+  display: flex;
+}
+
+.main-story {
+  padding-right: 24px;
+  width: 60%;
+}
+
+.main-story .media {
+  width: 100%;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.main-story h1 {
+  margin-bottom: 24px;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.main-story p {
+  margin-bottom: 24px;
+}
+
+.main-story h5 {
+  font-weight: bold;
+}
+
+/*---- (Main Content) Side Stories ----*/
+
+.stories {
+  padding-left: 16px;
+  width: 40%;
+  border-left: 1px solid #e0e2e2;
+  display: flex;
+  flex-direction: column;
+}
+
+.story {
+  margin-bottom: 2px;
+  padding: 16px;
+  display: flex;
+  border-bottom: 1px solid #e0e2e2;
+  border-top: 1px solid #e0e2e2;
+  background-color: #fff;
+}
+
+.story-info {
+  margin-left: 24px;
+  padding-top: 30px;
+  width: 65%;
+  font-family: 'Lato';
+}
+
+.story-info h3 {
+  margin-bottom: 8px;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.story-info p {
+  margin-bottom: 8px;
+  color: #4a4a4a;
+}
+
+.story-info a {
+  text-decoration: none;
+  color: #4a90e2;
+}
+
+.thumbnail {
+  display: flex;
+  align-items: center;/* Because !@#!@#ing Chrome (╯°□°）╯︵ ┻━┻ */
+  width: 35%;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.mobile-thumb {
+  display: none;
+}
+
+/*======= Course Styles ========*/
+
+.courses .container {
+  background-color: #eaebec;
+  text-align: center;
+}
+
+.tagline {
+  margin-bottom: 32px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+.courses .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.courses .container .tagline {
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.course {
+  margin-bottom: 32px;
+  margin-right: 32px;
+  width: 30%;
+  background-color: #fff;
+}
+
+.course-image {
+  display: flex;
+  align-items: center;/* Because !@#!@#ing Chrome (╯°□°）╯︵ ┻━┻ */
+}
+
+.course-image img {
+  width: 100%;
+}
+
+.course-info {
+  padding-top: 16px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+
+}
+
+.course-info h5, h3, p {
+  color: #767676;
+}
+
+.course-info h4 {
+  margin-bottom: 8px;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.course-info h5 {
+  margin-bottom: 8px;
+  font-size: 1.15em;
+}
+
+.course-image img {
+  height: auto;
+}
+
+
+/*===== Thesis Styles =====*/
+
+.thesis .flex-container {
+  display: flex;
+  text-align: left;
+}
+
+.thesis .stories,
+.thesis .story {
+  border: none;
+}
+
+.thesis .media video {
+  width: 100%;
+}
+
+
+/*=== Footer Styles ===*/
+
+footer {
+  border-top: 1px solid #e0e2e2;
+}

@@ -1,0 +1,271 @@
+/*===========================
+Colmar Academy Media Queries
+
+Author: Mitch M.
+Version: 1.0
+Last Modified: 10/28/17
+=============================*/
+
+
+@media only screen and (max-width: 640px) {
+  
+/*======= General ======*/
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+/*====== Top Bar =======*/
+
+nav .container {
+  padding: 0;
+}
+  
+nav .menu,
+nav .logo {
+  display: none;
+}
+
+.schoolname {
+  display: none;
+}
+
+.mobile-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.mobile-menu li a img {
+  height: 3em;
+}
+
+/*======= Banner Styles ========*/
+
+.banner .container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.media {
+  width: 100%;
+}
+
+.banner-textblock {
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.banner-textblock h1 {
+  margin: 0;
+  padding: 0;
+  max-width: 75%;
+}
+
+.banner-textblock h3 {
+  margin-top: 32px;
+  width: 75%;
+}
+.banner-btn {
+  margin-top: 24px;
+  width: 75%;
+}
+
+.banner-btn a {
+  padding: 18px 87px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/*======= Main Content Styles ========*/
+
+.main-content .main-story {
+  display: none;
+}
+
+/*---- (Main Content) Side Stories ----*/
+
+.stories {
+  margin-left: 0;
+  padding: 0 16px;
+  width: 100%;
+  border-left: 1px solid #e0e2e2;
+}
+
+.story {
+  margin-bottom: 64px;
+  padding: 0;
+  width: 100%;
+  flex-direction: column;
+  border: none;
+}
+
+.story-info {
+  margin: 0;
+  padding: 0;
+  padding: 16px 0;
+  width: 100%;
+  font-family: 'Lato';
+}
+
+.story-info h3,
+.story-info p,
+.story-info span {
+  padding-left: 16px;
+}
+
+.story-info h3 {
+  margin-bottom: 8px;
+  max-width: 300px;
+  font-size: 1.75em;
+  font-weight: bold;
+  color: #4a4a4a;
+
+}
+
+.story-info p {
+  margin-bottom: 8px;
+  max-width: 300px;
+  font-size: 1.15em;
+  color: #4a4a4a;
+}
+
+.story-info span {
+  font-size: 1.15em;
+}
+
+.thumbnail {
+  display: flex;
+  width: 100%;
+}
+
+.desktop-thumb {
+  display: none;
+}
+
+.mobile-thumb {
+  width: 100%;
+  display: block;
+}
+
+/*======= Course Styles ========*/
+
+.courses .container {
+  background-color: #eaebec;
+  text-align: center;
+
+}
+
+.tagline {
+  padding-top: 32px;
+  margin-bottom: 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.courses .flex-container {
+  padding: 32px 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.courses .container .tagline {
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.course {
+  margin-bottom: 8px;
+  margin-right: 0;
+  width: 100%;
+  background-color: #d8d8d8;
+}
+
+.course-image {
+  display: none;
+}
+
+.course-info {
+  padding: 16px 16px 24px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.course-info h5, 
+.course-info p {
+  display: none;
+
+}
+
+.course-info h5, 
+.course-info h4, 
+.course-info p {
+  color: #767676;
+}
+
+.course-info h4 {
+  margin-bottom: 8px;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.course-info h5 {
+  margin-bottom: 8px;
+  font-size: 1.15em;
+}
+
+.course-image img {
+  height: auto;
+}
+
+/*======= Thesis Styles ========*/
+
+.thesis .stories {
+  display: none;
+}
+
+.thesis .main-story h1,
+.thesis .main-story p {
+  display: none;
+}
+
+.thesis .flex-container {
+  padding: 32px 16px;
+  padding-bottom: 24px;
+}
+
+.thesis .tagline {
+  text-align: center;
+}
+
+.thesis .main-story {
+  width: 100%;
+}
+
+
+/*======= Footer Styles ========*/
+
+footer {
+  border: none;
+}
+
+footer .container {
+  padding: 16px;
+}
+
+.footer-nav {
+  display: none;
+}
+
+}
